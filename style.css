@@ -1,0 +1,259 @@
+*,html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvatica;
+  scroll-behavior: smooth;
+}
+header{
+  background: #1A2238;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #eaeaea;
+  gap: 10px;
+}
+
+.logo{
+  margin-right: auto;
+  padding: 15px;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.5 ease 0s;
+}
+
+.logo:hover{
+  color: #FF6A3D;
+  transform: rotate(2deg);
+}
+
+nav ul{
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  transition: all 0.5 ease 0s;
+}
+
+li:hover{
+  transform: rotate(2deg);
+}
+
+li a{
+  padding: 10px 7px;
+}
+
+a{
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+li a:hover{
+  color: #FF6A3D;
+}
+
+.btn-cda{
+  padding: 6px 12px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #FF6A3D;
+  color: #eaeaea;
+  cursor: pointer;
+}
+.btn-cdn{
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #FF6A3D;
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+.container{
+  max-width: 1200px;
+  height: 750px;
+	margin: 0 auto;
+	padding: 70px 0;
+}
+
+.intro{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.title{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description{
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.profil{
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.paralax{
+  background-image: url('img/belakang.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1350px;
+}
+
+.tentang{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1A2238;
+  color: #eaeaea;
+  padding: 40px;
+}
+
+.mt-10{
+  margin-top: 20px;
+}
+
+.card{
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-item{
+  width: 25%;
+  text-align: center;
+  min-height: 200px;
+  max-height: 300px;
+  padding: 24px;
+  background:#f7f7f7 ;
+  color: #222;
+  box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+}
+
+.icon-html{
+  font-size: 80px;
+  color: red;
+}
+.icon-css{
+  font-size: 80px;
+  color: blue;
+}
+
+.icon-js{
+  font-size: 80px;
+  color: #FFD700;
+}
+
+.card-title{
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.card-description{
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+footer{
+  width: 100%;
+  background: #1A2238;
+  color: #eaeaea;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.kontak{
+  padding: 15px;
+}
+
+.kontak-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 40px;
+  gap: 30px;
+}
+
+.kontak-icon{
+  font-size: 70px;
+}
+
+@media screen and (max-width: 480px){
+  
+  .paralax{
+    height: 700px;
+  }
+  
+  .tentang{
+    padding: 20px;
+  }
+  
+  .tentang .title{
+    font-size: 15px;
+  }
+  
+  .tentang .description{
+    font-size: 19;
+  }
+  
+  .card{
+    margin-top: 0;
+    gap: 0;
+  }
+  
+  .card-item{
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .kontak-item{
+    gap: 8px;
+  }
+  
+  .kontak-icon{
+    font-size: 50px;
+  }
+  
+  footer{
+    margin-top: 46px;
+    margin-bottom: 56px;
+  }
+  
+  footer .title{
+    font-size: 15px;
+  }
+  
+  nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    z-index: 9;
+    background: #1A2238;
+  }
+}

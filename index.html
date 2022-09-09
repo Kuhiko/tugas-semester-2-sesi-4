@@ -1,0 +1,84 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <title>sesi 3</title>
+</head>
+<body>
+  <header>
+    <div class="animate__animated animate__fadeInleft logo">
+      <h1>Nurullah{•~•}!</h1>
+    </div>
+    <nav>
+      <ul class="animate__animated animate__fadeInleft">
+        <li><a href="#about">about</a></li>
+        <li><a href="#study">study</a></li>
+      </ul>
+    </nav>
+    <button class="btn-cda animate__animated animate__fadeIn" onclick="redirInstagram()">Follow me</button>
+  </header>
+  
+  <div class="container">
+    <div class="intro" id="about">
+      <p class="title animate__animated animate__fadeInDown animate__delay-1s">Hello Nurullah Purnama her</p>
+      <p class="description animate__animated animate__fadeInUp animate__delay-1s">Pelajar dari SMK PGRI Enrekang</p>
+      <img class="profil animate__animated animate__zoomIn animate__delay-2s" src="img/nurullah.jpg" alt="erorr" />
+    </div>
+  </div>
+  <div class="paralax">
+    <div class="tentang">
+      <p class="title animate__animated animate__lightSpeedInLeft animate__delay-3s">Saya adalah programmer pemula</p>
+      <p class="description animate__animated animate__lightSpeedInLeft animate__delay-3s">Ngoding dulu jagonya belakangan</p>
+      <div class="mt-10">
+      <button class="btn-cdn animate__animated animate__rotateIn animate__delay-4s" onclick="redirEmail()">Email saya</button>
+      </div>
+    </div>
+    <div class="card animate__animated animate__slideInLeft animate__delay-5s" id="study">
+      <div class="card-item" data-aos="fade-right" data-aos-duration="500">
+        <i class="fa-brands fa-html5 icon-html"></i>
+        <p class="card-title">HTML</p>
+        <p class="card-description">Saya sudah menguasai HTML</p>
+      </div>
+      <div class="card-item" data-aos="fade-right" data-aos-duration="1000">
+        <i class="fa-brands fa-css3-alt icon-css"></i>
+        <p class="card-title">CSS</p>
+        <p class="card-description">Saya masih belajar CSS</p>
+      </div>
+      <div class="card-item" data-aos="fade-right" data-aos-duration="1500">
+        <i class="fa-brands fa-square-js icon-js"></i>
+        <p class="card-title">JAVASCRIPT</p>
+        <p class="card-description">Saya masih belajar JAVASCRIPT dasar</p>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="kontak">
+        <div class="kontak-item">
+          <a href="https://www.facebook.com/nurullah.purnama.52"><i class="fa-brands fa-facebook kontak-icon"></i></a>
+          <a href="https://wa.me/085214902871"><i class="fa-brands fa-whatsapp kontak-icon"></i></a>
+        </div>
+    </div>
+            <hr />
+            <p class="title">&copy; Creat with ♥️Nurullah{•~•}! </p>
+  </footer>
+  <script type="text/javascript" charset="utf-8">
+    function redirInstagram(){
+      window.location.href = "https://instagram.com/nurullah.prn"
+    }
+    function redirEmail(){
+      window.location.href = "mailto:nurullah.prn@gmail.com"
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+</body>
+</html>
